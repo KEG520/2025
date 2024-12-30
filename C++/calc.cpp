@@ -64,7 +64,7 @@ int main(){
                 std::cout << x / y << '\n';
             }
             else{
-                std::cout << "Error: Division by zero is not allowed.\n";
+                std::cout << "Error: Division by zero is not allowed. test for commit\n";
             }
 
         }
