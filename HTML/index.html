@@ -75,6 +75,8 @@
         <section>
             <h2>Gravitiy Falls</h2>
             <form action="/submit-url"> </form>
+
+
             <!-- <input> element allows for data collection (also a void element) -->
             <!-- using the <type> attribute you can create a field for fikes or buttons or anything really
                 here in this example i used the "text" value to so i only accept text -->
@@ -84,9 +86,26 @@
             <!--the "radio" if you want answers out of multiple options line (88) -->
             <!-- <label> associate the text for input to element (In the example, clicking on the word "Characters" will also select the radio button.)-->
             <!-- id attribute is used to identify specific HTML elements (each id value must be unique from all other id values)-->
+             <!-- to only select one of the options i added the name="" after type="radio" so one deselects when the other is-->
+            <fieldset>
+                <!--The fieldset element is used to group related inputs and labels together in a web form.-->
+                <!-- <legend> acts as a caption for the field set-->
+                <legend>Choose a character or monster and sumbit your response</legend>
+                <label><input id="characters" type="radio" name="characters-Monsters" value="characters"> Characters</label>
+            <!-- Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on,
+             which is not useful when you have multiple buttons. i will add a value attribute with the same id for each button-->
+                <label><input id="Monsters" type="radio" name="characters-Monsters" value="Monsters"> Monsters</label>
+            </fieldset>
 
-            <label><input id="characters" type="radio"> Characters</label>
-            <label><input id="Monsters" type="radio"> Monsters</label>
+            <fieldset>
+                <legend>pick a color below</legend>
+                <input id="green" type="checkbox" name="color">
+                <!-- nest the text within a label element and add a for attribute with the same value as the input element's id attribute. -->
+                <label for="green">Green</label>
+
+
+            </fieldset>
+
 
             <input required type = "text" name = "characters" placeholder="Ex. Grunkle stan">
 
