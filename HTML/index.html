@@ -1,6 +1,16 @@
-<html>
+<!--<!DOCTYPE html> tells browsers that the document is an HTML5 document which is the latest version of HTML.-->
+<!DOCTYPE html>
+<!--specify the language of your page by adding the lang attribute to the html element.-->
+<html lang=en>
+
 
     <body>
+        <!--head element is used to contain metadata about the document, such as its title, links to stylesheets, and scripts-->
+        <head>
+            <!--You can set browser behavior by adding meta elements in the head.-->
+            <meta charset = utf-8>
+            <title>My First Site</title>
+        </head>
 
     <main>
         <h1>Random Photo App</h1>
@@ -91,7 +101,8 @@
                 <!--The fieldset element is used to group related inputs and labels together in a web form.-->
                 <!-- <legend> acts as a caption for the field set-->
                 <legend>Choose a character or monster and sumbit your response</legend>
-                <label><input id="characters" type="radio" name="characters-Monsters" value="characters"> Characters</label>
+                <!-- make a checkbox checked or radio button selected by default, you need to add the checked attribute to it-->
+                <label><input id="characters" checked type="radio" name="characters-Monsters" value="characters"> Characters</label>
             <!-- Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on,
              which is not useful when you have multiple buttons. i will add a value attribute with the same id for each button-->
                 <label><input id="Monsters" type="radio" name="characters-Monsters" value="Monsters"> Monsters</label>
@@ -99,9 +110,13 @@
 
             <fieldset>
                 <legend>pick a color below</legend>
-                <input id="green" type="checkbox" name="color">
+                <!-- make a checkbox checked or radio button selected by default, you need to add the checked attribute to it-->
+                <input id="green" checked type="checkbox" name="color" value="green">  <label for="green">Green</label>
                 <!-- nest the text within a label element and add a for attribute with the same value as the input element's id attribute. -->
-                <label for="green">Green</label>
+                <input id="blue" type="checkbox" name=color value="blue"> <label for="blue">Blue</label>
+
+                <input id="purple" type="checkbox" name=color value="purple"> <label for="purple">Purple</label>
+
 
 
             </fieldset>
@@ -115,6 +130,8 @@
         </section>
 
     </main>
+    <!--footer element is used to define information about author, copyright data, links, contanct, etc-->
+    <footer><p>No Copyright - <a href="https://github.com/KEG52/2025" target="_blank">Kadden Grant</a></p></footer>
 
 
 
