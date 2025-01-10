@@ -1,0 +1,5 @@
+/* for h2 and p i used a comma method to group them together (note i can include h1 but want to show the difference)*/
+
+h2, p{
+    text-align: center;
+}
