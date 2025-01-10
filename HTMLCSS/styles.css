@@ -3,3 +3,7 @@
 h2, p{
     text-align: center;
 }
+/*change background color*/
+body{
+    background-color: burlywood;
+}
