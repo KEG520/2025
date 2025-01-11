@@ -3,7 +3,31 @@
 h2, p{
     text-align: center;
 }
+
 /*change background color*/
-body{
+body{/*
+    background-color: burlywood;*/
+
+    /*add a background image*/
+    background-image: url(beans.jpeg)
+}
+
+/*An id selector is defined by placing the hash symbol #, for the div to not take up the entire width of the page ill give the element a width of 300px  */
+/* more common to use a selector defined by a "."*/
+/*#*/.menu {
+    width: /*300px*/ 80%;
     background-color: burlywood;
+    margin-left: auto; /*to center the menu */
+    margin-right: auto;
+}
+.flavor{
+    text-align: left;
+    width: 75%;
+}
+.price{
+    text-align: right;
+    width: 25%;
+}
+.item p{
+    display: inline-block;
 }
