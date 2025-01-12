@@ -66,6 +66,9 @@ int main(){
             else{
                 std::cout << "Error: Division by zero is not allowed. test for commit\n";
             }
+        else if (operation == "%"){
+            std::cout << "This operation is a work in progress \n" << "Try again later ;)\n"
+        }
 
         }
         else {
