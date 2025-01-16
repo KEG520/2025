@@ -1,6 +1,6 @@
 /* for h2 and p i used a comma method to group them together (note i can include h1 but want to show the difference)*/
 
-h2, p{
+h1, h2, p{
     text-align: center;
 }
 
@@ -19,8 +19,16 @@ body{/*
     background-color: burlywood;
     margin-left: auto; /*to center the menu */
     margin-right: auto;
+      /*
+    padding-left: auto;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    can use padding top,bottom, left, right */
+    padding: 20px; /*does all sides */
+    max-width: 500px; /* menu max width to prevent an overspaced wide me*/
 }
-.flavor{
+.flavor, .dessert{
     text-align: left;
     width: 75%;
 }
@@ -31,3 +39,4 @@ body{/*
 .item p{
     display: inline-block;
 }
+
