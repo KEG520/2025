@@ -9,8 +9,15 @@ body{/*
     background-color: burlywood;*/
 
     /*add a background image*/
+    font-family: sans-serif, Impact, serif;
     background-image: url(beans.jpeg)
 }
+
+.established{
+
+    font-family: italic;
+}
+
 
 /*An id selector is defined by placing the hash symbol #, for the div to not take up the entire width of the page ill give the element a width of 300px  */
 /* more common to use a selector defined by a "."*/
