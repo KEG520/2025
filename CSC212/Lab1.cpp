@@ -5,37 +5,37 @@
 #include <iostream>
 
 
-// int main() {
-//     // TODOs
+int main() {
+    // TODOs
 
-//     // create an integer variable and a pointer to it
-//     int a;
-//     a = 10;
-//     int* ptr = &a;
-//     std::cout << *ptr<< '\n';
+    // create an integer variable and a pointer to it
+    int a;
+    a = 10;
+    int* ptr = &a;
+    std::cout << *ptr<< '\n';
     
 
 
-//     // create a double variable and a pointer to it
+    // create a double variable and a pointer to it
 
-//     double b;
-//     b = 10.5;
-//     double* voo = &b;
-//     std::cout << *voo << '\n';
+    double b;
+    b = 10.5;
+    double* voo = &b;
+    std::cout << *voo << '\n';
     
-//     // for both variables, print their memory addresses 
-//     // using hexadecimal values, and their current values
-//     // (no need to initialize the variables)
-//     std::cout << "Mem Adress" << &a << '\n';
-//     std::cout << "Mem adress" << &b;
+    // for both variables, print their memory addresses 
+    // using hexadecimal values, and their current values
+    // (no need to initialize the variables)
+    std::cout << "Mem Adress" << &a << '\n';
+    std::cout << "Mem adress" << &b;
 
 
-//     // modify the values of the variables using 
-//     // the pointers
+    // modify the values of the variables using 
+    // the pointers
 
-//     *ptr = 20;
-//     *voo = 20.50;
-// }
+    *ptr = 20;
+    *voo = 20.50;
+}
 
 
 //Pointers to variables of different types
