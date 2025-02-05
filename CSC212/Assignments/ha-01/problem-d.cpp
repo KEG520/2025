@@ -20,21 +20,40 @@ int main(){
 
 
 
-    // append each number into a vector 0-9 (10 digits) 
-    std::vector<char> numbersstr;
-
-    for (int i=0; i < cpr.length(); i++){
-        numbersstr.push_back(cpr[i]);;
-
-    }
-    for (int i = 0; i < numbersstr.size(); i++) {
-        std::cout << numbersstr[i] << " ";
-    }
 
     // turn each char into a readable interger  (int)
     // using the stoi method (string to int)
     //sourcce https://www.geeksforgeeks.org/convert-string-to-int-in-cpp/?ref=header_outind
+
+    //int seqence = 0;
+    //std::cout << seqence;
+
+    // append each number into a vector 0-9 (10 digits) 
+    std::vector<int> newseq;
+    for (int i=0; i < cpr.length(); i++){
+        // to conver a string holding ints string s = "12356" | use the int ____ = str[i] - '0';
+        int curnum = cpr[i] - '0';
+        newseq.push_back(curnum);
+        //std::cout << newseq[i] << ' ';
+        
+    }
+
+    std::vector<int> setvals = {4,3,2,7,6,5,4,3,2,1};
+    int sum = 0;
+    for (int i = 0 ; i < newseq.size(); i++){
+        sum += newseq[i] * setvals[i];
+        
+    }
+    int test = 0;
+    if (sum % 11 == 0){
+        test++;
+    }
+    else{
+        test = 0;
+    }
+    std::cout << test;
     
+
 
 
 
@@ -45,5 +64,7 @@ int main(){
 
     return 0;
 
+// advance reasoning 
+// 
 
 } 
