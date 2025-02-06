@@ -1,52 +1,53 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 int main() {
     int n;
+
     while (std::cin >> n) {
-        if (n == 0) break;
+        if (n == 0) {
+            break; // End input on n = 0
+        }
 
-        std::vector<int> first(n);
-        std::vector<int> scnd(n);
-        std::vector<int> snditr(n);
+        std::vector<int> first(n), scnd(n);
 
-        // Input first and second lists
-        for (int i = 0; i < n; i++) std::cin >> first[i];
+        // Read the first list
+        for (int i = 0; i < n; i++) {
+            std::cin >> first[i];
+        }
+
+        // Read the second list
         for (int i = 0; i < n; i++) {
             std::cin >> scnd[i];
-            snditr[i] = i;  // Initialize snditr with original indices
         }
 
-        // Bubble sort for the first list
-        for (int i = 0; i < first.size() - 1; i++) {
-            for (int j = 0; j < first.size() - 1 - i; j++) {
-                if (first[j] > first[j + 1]) {
-                    std::swap(first[j], first[j + 1]);
-                }
-            }
-        }
-
-        // Bubble sort for the second list while tracking indices
-        for (int i = 0; i < scnd.size() - 1; i++) {
-            for (int j = 0; j < scnd.size() - 1 - i; j++) {
-                if (scnd[j] > scnd[j + 1]) {
-                    std::swap(scnd[j], scnd[j + 1]);       // Swap values in scnd
-                    std::swap(snditr[j], snditr[j + 1]);  // Swap indices in snditr
-                }
-            }
-        }
-
-        // Reorder the second list based on the original first list
-        std::vector<int> reordered(n);
+        // Store the original indices of the first list
+        std::vector<int> original_indices(n);
         for (int i = 0; i < n; i++) {
-            reordered[i] = scnd[snditr[i]];  // Match original positions
+            original_indices[i] = i;
         }
 
-        // Output the reordered second list
+        // Sort the original indices based on the values in the first list
+        std::sort(original_indices.begin(), original_indices.end(), [&first](int i, int j) {
+            return first[i] < first[j];
+        });
+
+        // Sort the second list to match the sorted order of the first list
+        std::vector<int> reordered_scnd(n);
+        std::vector<int> sorted_scnd = scnd;
+        std::sort(sorted_scnd.begin(), sorted_scnd.end());
+
         for (int i = 0; i < n; i++) {
-            std::cout << reordered[i] << " ";
+            reordered_scnd[original_indices[i]] = sorted_scnd[i];
         }
-        std::cout << "\n";
+
+        // Print the reordered second list
+        for (int i = 0; i < n; i++) {
+            std::cout << reordered_scnd[i] << '\n';
+        }
+
+        std::cout << '\n'; // Blank line between test cases
     }
 
     return 0;
