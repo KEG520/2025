@@ -10,7 +10,10 @@ body{/*
 
     /*add a background image*/
     font-family: sans-serif, Impact, serif;
-    background-image: url(beans.jpeg)
+    background-image: url(beans.jpeg);
+    padding: 20px;
+
+
 }
 
 .established{
@@ -45,6 +48,33 @@ body{/*
 }
 .item p{
     display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+
+}
+
+hr{
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+
+}
+
+.bottom-line{
+    /* add spacing for the bottom divider */
+    margin-top: 25px;
+
+}
+
+/* FOOTER STYLING */
+
+footer{
+    font-size: 14px;
+}
+
+a{
+    color: black;
 }
 
 
