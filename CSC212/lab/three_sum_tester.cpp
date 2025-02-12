@@ -28,8 +28,7 @@ int main() {
     assert(three_sum(arr4, 10, 6) == 1);  // 1 + 2 + 3 = 6
     assert(three_sum(arr4, 10, 30) == 0); // No such combination
     assert(three_sum(arr4, 10, 27) == 1); // 8 + 9 + 10 = 27
-    assert(three_sum(arr4, 10, 50) == 0); // No such combination
-
+    assert(three_sum(arr4, 10, 50) == 0); // No such combination-
     
  return 0;
 }
