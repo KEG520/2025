@@ -1,3 +1,11 @@
+// Kadden Grant
+//The purpose of a constructor is to initialize the state of an object to be used in a fuction
+// the deconstructor does the clean up work after the work is done
+
+//  What is the purpose of constructors and destructors in C++ classes? Explain why the messages 'constructor called' and
+//  'destructor called' are printed when your program is executed.
+
+
 #include "date.h"
 #include <iostream>
 
