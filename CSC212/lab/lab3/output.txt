@@ -1,0 +1,24 @@
+PS C:\Users\DJKG5\Documents\GitHub\2025\CSC212\lab\lab3> g++ .\date_tester.cpp -o test
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x1e): undefined reference to `Date::Date()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x2a): undefined reference to `Date::print()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x47): undefined reference to `Date::Date(int, int, int)'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x53): undefined reference to `Date::print()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x64): undefined reference to `Date::add_days(int)'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x70): undefined reference to `Date::print()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x81): undefined reference to `Date::print()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0xd7): undefined reference to `Date::operator==(Date const&)'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x143): undefined reference to `Date::operator!=(Date const&)'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x1af): undefined reference to `Date::operator<(Date const&)'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x23b): undefined reference to `Date::Date()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x286): undefined reference to `Date::operator+=(int)'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x2ab): undefined reference to `Date::print()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x2f1): undefined reference to `Date::~Date()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x330): undefined reference to `Date::~Date()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x33c): undefined reference to `Date::~Date()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x375): undefined reference to `Date::~Date()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x39d): undefined reference to `Date::~Date()'
+C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\DJKG5\AppData\Local\Temp\cchEp76w.o:date_tester.cp:(.text+0x3ae): more undefined references to `Date::~Date()' follow
+collect2.exe: error: ld returned 1 exit status
+
+
+## I was unable to finish lab in time but this is what i received when running the test file
