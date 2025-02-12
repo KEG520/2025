@@ -1,4 +1,4 @@
-Souce: [Source](https://hbr.org/2020/07/so-you-want-to-be-an-entrepreneur)
+[Source](https://hbr.org/2020/07/so-you-want-to-be-an-entrepreneur)
 
 Introduction to Entrepreneurship
 
