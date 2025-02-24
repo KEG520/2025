@@ -17,14 +17,21 @@
                 <label for="email">Enter Your Email: <input id="email" type="email" required /></label>
                 <label for="new-password">Create a New Password:<input id="new-password" type="password" pattern="[0-5a-z]{8,}"required/></label>
             </fieldset>
-                <label><input type="radio" name="account-type"/>Personal</label>
-                <label><input type="radio" name="account-type"/>Buisiness</label>
+<!-- --------------------------------------------- -->
             <fieldset>
-                <label></label>
-                <label></label>
+                <legend>Account type (required)</legend>
+                <label for="personal-account"><input type="radio" name="account-type" id="personal-account"checked/>Personal</label>
+                <label for="business-account"><input type="radio" name="account-type" id="business-account"/>Business</label>
+            </fieldset>
+<!-- --------------------------------------- -->
+            <fieldset>
+                <label>Upload a profile picture:<input type="file"/></picture></label>
+                <label>Input your age (years):</Input><input type="number" max="120" min="13"/> </label>
             </fieldset>
 
-            <fieldset></fieldset>
+
+            <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions"/>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and terms and conditions</a></label>
+
             <input type="submit" value="Submit"/>
 
     </head>
