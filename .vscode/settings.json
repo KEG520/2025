@@ -64,6 +64,7 @@
         "variant": "cpp",
         "iomanip": "cpp",
         "xlocmon": "cpp",
-        "xloctime": "cpp"
+        "xloctime": "cpp",
+        "sstream": "cpp"
     }
 }
