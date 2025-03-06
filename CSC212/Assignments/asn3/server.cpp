@@ -10,7 +10,7 @@ std::cin >> n;
 std::cin >> t;
 
 
-int arr[n];
+int arr[5];
 
 for (int i = 0; i < n; i++){
     std::cin >> arr[i];

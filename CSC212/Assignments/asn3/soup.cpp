@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <string>
 
 int main(){
     int l;
@@ -26,8 +27,19 @@ int main(){
                 return 0;
             }
 
-            char
-        }
+            char top = soup.top().first;
+
+            if ((s == ')' && top == '(') || (s == ']' && top == '[') || (s == '}' && top == '{')) {
+                soup.pop();
+            }
+            else{
+                std::cout << s << " " << i;
+                return 0;
+            }
         
     }
+    }
+    std::cout << "ok so far" << std::endl;
+
+    return 0;
 }
