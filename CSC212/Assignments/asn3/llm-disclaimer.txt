@@ -1,0 +1,4 @@
+# Use Of AI
+
+For these homeworks I used ai to explain problems that i had a hard time understanding and explain them in laymans temrs.
+For problems that I didnt know how to start I asked chat for a psuedo code skeleton to help me
