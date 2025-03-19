@@ -1,0 +1,59 @@
+My Output
+
+Capacity: 100
+=> Testing the binary heap
+100: one hundred
+35: thirty five
+30: thirty
+25: twenty five
+20: twenty
+15: fifteen
+10: ten
+6: six
+5: five
+4: four
+-100: minus one hundred
+
+=> Testing the make_heap method
+100
+35
+30
+25
+20
+15
+10
+6
+5
+4
+-100
+
+Ananlysis
+
+Min Heap Initialization:
+
+A min heap of size K is maintained using std::priority_queue<int, std::vector<int>, std::greater<int>>.
+The program reads integers one by one from stdin.
+
+Heap Operations:
+
+If the heap contains fewer than K elements, the number is inserted.
+If the heap is full and the new number is greater than the smallest element (heap.top()), the smallest element is removed, and the new number is inserted.
+
+Extracting the Top-K Elements:
+
+Once all elements are processed, the heap contains the K largest numbers.
+The elements are extracted and sorted in ascending order before printing.
+ n is the total number of elements in the input file and K is the number of top elements to be extracted.
+
+Heap Operations:
+
+Each insertion and deletion operation in a min heap of size K takes O(log K) time.
+Since each process n elements, the total heap operations complexity is O(n log K).
+Final Sorting:
+
+Conclusion
+
+The algorithm efficiently finds the top-K largest elements using a min heap.
+It is well-suited for large datasets as it only maintains a small K-sized heap rather than sorting the entire dataset.
+The time complexity of O(n log K) ensures that even for large n, the processing remains efficient.
+
