@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Once you git commit your changes will appear on github immediately",
+  "steps": [
+    {
+      "file": "CSC311/misconception2/git_commit.md",
+      "description": "Open gitbash or your personal terminal and create a new folder",
+      "line": 3
+    },
+    {
+      "file": "CSC311/misconception2/git_commit.md",
+      "description": "cd (change directory) into your testfolder",
+      "line": 5
+    },
+    {
+      "file": "CSC311/misconception2/git_commit.md",
+      "description": "create your newfile with echo \"(whatever text)\" >> filename.txt",
+      "line": 7
+    },
+    {
+      "file": "CSC311/misconception2/git_commit.md",
+      "description": "git add your file to be commited",
+      "line": 9
+    },
+    {
+      "file": "CSC311/misconception2/git_commit.md",
+      "description": "check the git status if your status outputs the following:\r\n\r\nYour branch is up to date with 'origin/main'.\r\n\r\nUntracked files:\r\n  (use \"git add <file>...\" to include in what will be committed)\r\n        git_commit.md\r\n\r\n        you did not push to github yet and your file is still local",
+      "line": 13
+    },
+    {
+      "file": "CSC311/misconception2/git_commit.md",
+      "description": "git push your file you will see this message \r\nEverything up-to-date\r\n\r\nrun git status to receive this message\r\nOn branch main\r\nYour branch is up to date with 'origin/main'.",
+      "line": 15
+    },
+    {
+      "file": "CSC311/misconception2/git_commit.md",
+      "description": "add your commit message for the commit",
+      "line": 11
+    }
+  ]
+}
